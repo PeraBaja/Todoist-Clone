@@ -1,0 +1,80 @@
+html{
+    --text-color: #FAE7C9;
+    --background-color: #706233;
+    --darker-background-color: #41381d;
+    --hover-color: #E1C78F;
+    --other-background-color: #B0926A;
+    background-color: var(--background-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--text-color);
+}   
+body{
+    display: grid;
+    grid-template-columns: repeat(6);
+    gap: 10px;
+    grid-auto-rows: minmax(18vh, auto);
+    margin: 0;
+    padding: 0;
+}
+hr{
+    grid-column: 2s;
+    grid-row: 2 / 5;
+    z-index: 2;
+
+}
+#SideBar{
+    grid-column: 1;
+    grid-row: 2 / 5;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #41381d;
+}
+#TopBar{
+    margin-top: 0;
+    grid-column: 1 / 6;
+    grid-row: 1;
+    background-color: var(--darker-background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+#TodaySection{
+    grid-column: 3 / 5;
+    grid-row: 2 / 4;
+}
+img.icon{
+    filter: invert(95%) sepia(8%) saturate(2874%) hue-rotate(304deg) brightness(116%) contrast(96%);
+}
+
+.button:hover{
+    font-weight: 100;  
+    background-color: var(--other-background-color);
+}
+.upgrade{
+    flex: 0.2 0.2 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.button{
+    color: var(--text-color);
+    margin: 20px;
+}
+.open-profile{
+    border-radius: 50%;
+    filter: none;
+    background-color: aqua;
+}
+.search-bar{
+    flex: 1 0.3 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+.left-control{
+    flex: 0.3 0.3 0;
+
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}

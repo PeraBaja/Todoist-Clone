@@ -15,8 +15,8 @@ addTaskButtons.forEach(button => {
         
         confirmButton.onclick = function(){
             createTask(textInput.value)
-            todaySection.removeChild(textInput)
-            todaySection.removeChild(confirmButton)
+            textInput.parentElement.removeChild(textInput)
+            confirmButton.parentElement.removeChild(confirmButton)
 
         }
     })
